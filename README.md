@@ -1,2 +1,2 @@
-# OMGSoundboard.github.io
-OMGSoundboard Website
+# [OMGSoundboard Website](https://omgsoundboard.github.io/)
+
