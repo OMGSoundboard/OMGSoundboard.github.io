@@ -1,171 +1,528 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>OMGSoundboard</title>
-  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="logo.png" alt="OMGSoundboard Logo"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#"><i class="material-icons">help_outline</i><a href="https://omgsoundboard.freshdesk.com/">Support</a></a></li>
-        <li><a href="#"><i class="material-icons">file_download</i><a href="https://github.com/OMGSoundboard/android-app/releases/latest">Download (APK)</a></a></li>
-        <li><a href="#"><i class="material-icons">shop</i><a href="https://play.google.com">Download (Google Play)</a></a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">OMGSoundboard</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">OMGSoundboard is an Open Source soundboard for Android.</h5>
-      </div>
-      <div class="row center">
-        <a href="https://github.com/OMGSoundboard/android-app" id="download-button" class="btn-large waves-effect waves-light orange">GitHub</a>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">favorite</i></h2>
-            <h5 class="center">Favorites</h5>
-
-            <p class="light">You can mark your favorite tunes as favorites.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">euro_symbol</i></h2>
-            <h5 class="center">Free app without ads</h5>
-
-            <p class="light">The app is available for free and does NOT have ads. Awesome!</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">code</i></h2>
-            <h5 class="center">Open Source</h5>
-            <p class="light">The app is Open Source and invites everyone to participate.</p>
-            </div></div>
-
- 					<div class="video-container">
-        			<iframe width="853" height="480" src="https://www.youtube.com/embed/10ika80oXMM" frameborder="0" allowfullscreen></iframe>
-      				</div>
-
-     <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">help</i></h2>
-            <h5 class="center">Support</h5>
-
-            <p class="light">You are always welcome to open a ticket.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">stars</i></h2>
-            <h5 class="center">Fantastic</h5>
-
-            <p class="light">Did we already mention that OMGSoundboard is a fantastic app?</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">equalizer</i></h2>
-            <h5 class="center">Fantastic Tunes</h5>
-            <p class="light">OMGSoundboards offers the most awesome tunes. In case you would like one or more fantastic tunes added you can open a Pull Request or open a ticket.</p>
-            </div></div>
-
-          </div>
-        </div>
-
-        				<div class="carousel">
-					    <a class="carousel-item" href="#one!"><img src="screenshot1.jpg"></a>
-   						<a class="carousel-item" href="#two!"><img src="screenshot2.jpg"></a>
-    					<a class="carousel-item" href="#three!"><img src="screenshot3.jpg"></a>
- 					    <a class="carousel-item" href="#four!"><img src="screenshot4.jpg"></a>
- 					    <a class="carousel-item" href="#five!"><img src="screenshot5.jpg"></a>
- 					    </div>
-
-          <div class="row center">
-        <a href="https://github.com/OMGSoundboard/android-app/releases/latest" id="download-button" class="btn-large waves-effect waves-light orange">Download (APK)</a>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="">
         
-        <a href="https://play.google.com" id="download-button" class="btn-large waves-effect waves-light orange">Download (Google Play)</a>
-      	</div>    	
+        <meta name="author" content="M">
+		
+        <title>OMGSoundboard | Badass Android Soundboard</title>
+		
+		<!-- Mobile Specific Meta
+		================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+		
+		<!-- CSS
+		================================================== -->
+		<!-- material Icon font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- bootstrap.min css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Owl Carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- Grid Component css -->
+        <link rel="stylesheet" href="css/component.css">
+		<!-- Slit Slider css -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- Media Queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
-      </div>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		
+		<!-- Oswald / Title Font -->
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+		<!-- Ubuntu / Body Font -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+		
+		<!-- Modernizer Script for old Browsers -->		
+        <script src="js/modernizr-2.6.2.min.js"></script>
 
-    </div>
-    <br><br>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+	
+    </head>
+	
+    <body id="body">
+	    <!--
+	    Start Preloader
+	    ==================================== -->
+		<div id="loading-mask">
+			<div class="loading-img">
+				<img alt="OMG Preloader" src="img/preloader.gif"  />
+			</div>
+		</div>
+        <!--
+        End Preloader
+        ==================================== -->
+		
+        <!--
+        Welcome Slider
+        ==================================== -->
+		<section id="home">	    
+		
+            <div id="slitSlider" class="sl-slider-wrapper">
+				<div class="sl-slider">
+					
+					<!-- single slide item -->
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+						<div class="carousel-caption">
+							
+						</div>
+						</div>
+					</div>
+					<!-- /single slide item -->
+					
+					<!-- single slide item -->
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+						<div class="carousel-caption">
+							<div>
+								<h2 class="heading animated fadeInDown">OMGSoundboard</h2>
+								<h3 class="animated fadeInUp">is a Badass Android Soundboard based on Material Design and the finest tunes.</h3>
+								<a class="btn btn-green animated fadeInUp" href="#about">Get Started</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- /single slide item -->
 
-    <div class="section">
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
 
-    </div>
-  </div>
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+				</nav>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">About</h5>
-          <p class="grey-text text-lighten-4">OMGSoundboard is an Open Source soundboard for Android.</p>
+			</div><!-- /slider-wrapper -->
+		</section>
+		<!--/#home section-->
+		
+        <!-- 
+        Fixed Navigation
+        ==================================== -->
+ 	<div id="navigation-sticky-wrapper" class="sticky-wrapper" style="height: 23px;">
+        <header id="navigation" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+                    <a class="navbar-brand" href="#body">
+						<h1 id="logo">
+							<img src="img/logo-omg.png" alt="OMGSoundboard" />
+						</h1>
+					</a>
+					<!-- /logo -->
+                </div>
 
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body"><i class="material-icons">home</i> Home</a></li>
+                        <li><a href="#about"><i class="material-icons">perm_identity</i> About Us</a></li>
+                        <li><a href="#contact-us"><i class="material-icons">email</i> Contact</a></li>
+                        <li><a href="#legal"><i class="material-icons">account_balance</i> Legal</a></li>
+                     	<li class="dropdown">
+          					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">group</i> Social <span class="caret"></span></a>
+          					<ul class="dropdown-menu">
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://github.com/OMGSoundboard"><i class="fab fa-github"></i> GitHub</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://gitter.im/OMGSoundboard/Lobby/"><i class="fab fa-gitter"></i> Gitter</a></li>
+      							<li role="presentation"><a role="menuitem" tabindex="-1" href="https://omgsoundboard.freshdesk.com/"><i class="fas fa-ambulance"></i> Helpdesk</a></li>
+    						</ul>
+  						</li>
+                        <li><a href="https://github.com/OMGSoundboard/android-app/releases"><i class="material-icons">file_download</i> APK Download</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=audio.omgsoundboard.android"><object type="image/svg+xml" data="playstore.svg"></object> Google Play</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+   	</div>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<!--
+		Start About Section
+		==================================== -->
+		<section id="about" class="bg-one">
+			<div class="container">
+				<div class="row">
+				
+					<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="1500ms" >
+						<h2>About <span class="color">Us</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
+					
+					<!-- About item -->
+					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" >
+						<div class="wrap-about">							
+							<div class="icon-box">
+								<i class="fas fa-heart fa-4x"></i>
+							</div>					
+							<!-- Express About Yourself -->
+							<div class="about-content text-center">
+								<h3 class="ddd">Favorites</h3>								
+								<p>You can mark your favorite tunes as favorites.</p>
+							</div>
+						</div>
+					</div> 
+					<!-- End About item -->
+					
+					<!-- About item -->
+					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+						<div class="wrap-about">
+							<div class="icon-box">
+								<i class="fas fa-euro-sign fa-4x"></i>
+							</div>
+							<!-- Express About Yourself -->
+							<div class="about-content text-center">
+								<h3>Free app without ads</h3>
+								<p>The app is available for free and does NOT have ads. Awesome! 😍</p>
+							</div>
+						</div>
+					</div> 
+					<!-- End About item -->
+					
+					<!-- About item -->					
+					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="wrap-about kill-margin-bottom">
+							<div class="icon-box">
+								<i class="fab fa-osi fa-4x"></i>
+							</div>
+							<!-- Express About Yourself -->
+							<div class="about-content text-center">
+								<h3>Open Source</h3>
+								<p>The app is Open Source and invites everyone to participate.</p>
+							</div>
+						</div>
+					</div> 
+					<!-- End About item -->
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Legal</h5>
-          <ul>
-            <li><a class="white-text" href="#!"><a href="privacypolicy.html">Privacy Policy</a></li>
-            <li><a class="white-text" href="#!"><a href="tos.html">Terms of Service</a></li>
-            <li><a class="white-text" href="#!"><a href="copyright.html">Copyright</a></li>
-            <li><a class="white-text" href="#!"><a href="mailto:marvin@omgsoundboard.audio?Subject=OMGSoundboard%20Legal">E-Mail</a></a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!"><a href="https://play.google.com">Download (Google Play)</a></li>
-            <li><a class="white-text" href="#!"><a href="https://github.com/OMGSoundboard/android-app/releases/latest">Download (APK)</a></li>
-            <li><a class="white-text" href="#!"><a href="https://omgsoundboard.freshdesk.com/">Support</a></a></li>
-            <li><a class="white-text" href="#!"><a href="mailto:marvin@omgsoundboard.audio?Subject=OMGSoundboard%20Connect">E-Mail</a></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      OMGSoundboard
-      </div>
-    </div>
-  </footer>
+					<!-- About item -->
+					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+						<div class="wrap-about">
+							<div class="icon-box">
+								<i class="fas fa-medkit fa-4x"></i>
+							</div>
+							<!-- Express About Yourself -->
+							<div class="about-content text-center">
+								<h3>Support</h3>
+								<p>You are always welcome to open a ticket or drop a mail.</p>
+							</div>
+						</div>
+					</div> 
+					<!-- End About item -->
 
+					<!-- About item -->
+					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+						<div class="wrap-about">
+							<div class="icon-box">
+								<i class="fas fa-star fa-4x"></i>
+							</div>
+							<!-- Express About Yourself -->
+							<div class="about-content text-center">
+								<h3>Fantastic</h3>
+								<p>Did we already mention that OMGSoundboard is a fantastic app?</p>
+							</div>
+						</div>
+					</div> 
+					<!-- End About item -->
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+					<!-- About item -->
+					<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+						<div class="wrap-about">
+							<div class="icon-box">
+								<i class="fab fa-itunes-note fa-4x"></i>
+							</div>
+							<!-- Express About Yourself -->
+							<div class="about-content text-center">
+								<h3>Fantastic Tunes</h3>
+								<p>OMGSoundboards offers the most awesome tunes. In case you would like one or more fantastic tunes added you can open a Pull Request, open a ticket or drop a line.</p>
+							</div>
+						</div>
+					</div> 
+					<!-- End About item -->
+					
+				</div> 		<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
+		
+		<!--
+		Start Main Features
+		==================================== -->
+		<section id="main-features">
+			<div class="container">
+				<div class="row">
+					
+					<!-- features item -->
+					<div id="features">						
+						<div class="item">
+							<div class="features-item">
+							
+								<!-- features media -->
+								<div class="col-md-12 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
+									<iframe width="320" height="150" src="https://www.youtube.com/embed/10ika80oXMM"></iframe>
+								</div>
+								<!-- /features media -->
+													
+							</div>
+						</div>
+					</div>
+					<!-- /features item -->
+					
+				</div> 		<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
+		
+		<!-- Start Contact Us
+		=========================================== -->		
+		<section id="contact-us">
+			<div class="container">
+				<div class="row">
+					
+					<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Get In <span class="color">Touch</span></h2>
+						<div class="border"></div>
+					</div>
+					<!-- /section title -->
 
-  </body>
+					<!-- Contact Form -->
+					<div class="contact-form col-md-4 col-md-offset-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+						<form id="contact-form" method="post" action="sendmail.php" role="form">
+						
+							<div class="form-group">
+								<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+							</div>
+							
+							<div class="form-group">
+								<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+							</div>
+							
+							<div class="form-group">
+								<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+							</div>
+							
+							<div class="form-group">
+								<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
+							</div>
+							
+							<div id="mail-success" class="success">
+								Thank you. The Mailman is on His Way :)
+							</div>
+							
+							<div id="mail-fail" class="error">
+								Sorry, don't know what happened. Try later :(
+							</div>
+							
+							<div id="cf-submit">
+								<input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+							</div>						
+							
+						</form>
+					</div>
+					<!-- ./End Contact Form -->
+				
+				</div> <!-- end row -->
+			</div> <!-- end container -->			
+		</section> <!-- end section -->
+		
+		<!-- end Contact Area
+		========================================== -->
+		
+		<!-- Start Legal Section
+		==================================== -->
+		
+		<section id="legal" class="bg-one">
+			<div class="container">
+				<div class="row">
+					<!-- section title -->
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Our <span class="color">Legal</span></h2>
+						<div class="border"></div>
+					</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non risus sed turpis mattis varius a vel orci. Maecenas mollis tellus justo. Nulla vitae nulla a nisl iaculis tincidunt quis vel quam. Duis ipsum diam, pulvinar nec lacus id, venenatis ultrices est. Curabitur vestibulum nunc et pharetra lacinia. Nunc et pellentesque nisl. Ut eu dui dapibus, convallis justo ullamcorper, tincidunt eros. Mauris congue mauris sit amet ex fermentum tempor. Aenean id cursus dui. Sed mauris ligula, faucibus ac pellentesque a, varius non purus. Integer nibh dui, molestie eu massa tincidunt, interdum ornare tortor.</p>
+
+						<p>Mauris dui urna, viverra et ornare et, rutrum vel ex. Aliquam fermentum metus fringilla, bibendum purus a, mollis leo. Aliquam erat volutpat. Curabitur porta sem vitae lacinia gravida. Donec id sem ac turpis condimentum ornare. Aliquam et lorem vestibulum, faucibus dolor pharetra, aliquam est. Donec ac mauris vel est dignissim maximus. Mauris vel erat vitae sapien vestibulum dignissim in laoreet nisi. Sed eu rhoncus eros. Sed mollis nisi in odio dignissim, a ornare dui ornare. Proin vitae pharetra leo. Quisque arcu elit, sollicitudin sed maximus in, scelerisque ac metus. Morbi ultricies venenatis purus sed posuere.</p>
+				</div> 		<!-- End row -->
+			</div>   	<!-- End container -->
+		</section>   <!-- End section -->
+
+		<section id="screenshots">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-duration="500ms">
+					<div class="col-lg-12">
+					
+						<!-- section title -->
+						<div class="title text-center">
+							<h2>Our<span class="color"> Screenshots</span></h2>
+							<div class="border"></div>
+						</div>
+						<!-- /section title -->
+	
+			<!-- portfolio items -->
+			<div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
+                <ul id="og-grid" class="og-grid">
+				
+					<!-- single portfolio item -->	
+					<li class="mix app">
+						<a href="javascript:void(0)" data-largesrc="img/portfolio/1.jpg">
+							<img src="img/portfolio/1.jpg" alt="omg">
+							<div class="hover-mask">
+							</div>
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+					
+					<!-- single portfolio item -->
+					<li class="mix web">
+						<a href="javascript:void(0)" data-largesrc="img/portfolio/2.jpg">
+							<img src="img/portfolio/2.jpg" alt="omg">
+							<div class="hover-mask">
+							</div>
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+					
+					<!-- single portfolio item -->
+					<li class="mix photoshop">
+						<a href="javascript:void(0)" data-largesrc="img/portfolio/3.jpg">
+							<img src="img/portfolio/3.jpg" alt="omg">
+							<div class="hover-mask">
+							</div>
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+					
+					<!-- single portfolio item -->
+					<li class="mix illustrator">
+						<a href="javascript:void(0)" data-largesrc="img/portfolio/4.jpg">
+							<img src="img/portfolio/4.jpg" alt="omg">
+							<div class="hover-mask">
+							</div>
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+					
+					<!-- single portfolio item -->
+					<li class="mix app">
+						<a href="javascript:void(0)" data-largesrc="img/portfolio/5.jpg">
+							<img src="img/portfolio/5.jpg" alt="omg">
+							<div class="hover-mask">
+							</div>
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+					
+					<!-- single portfolio item -->
+					<li class="mix app">
+						<a href="javascript:void(0)" data-largesrc="img/portfolio/6.jpg">
+							<img src="img/portfolio/6.jpg" alt="omg">
+							<div class="hover-mask">
+							</div>	
+						</a>
+					</li>
+					<!-- /single portfolio item -->
+				</ul> <!-- end og grid -->
+			</div>  <!-- portfolio items wrapper -->
+			
+		</section>   <!-- End section -->
+		
+		<footer id="footer" class="bg-one">
+			<div class="container">
+			    <div class="row wow fadeInUp" data-wow-duration="500ms">
+					<div class="col-lg-12">
+
+						<!-- copyright -->
+						<div class="copyright text-center">
+							<a href="index.html">
+								<img src="img/logo-omg.png" alt="OMGSoundboard" /> 
+							</a>
+							<br />
+							<br />
+							
+							<i class="fas fa-home"></i> made by <a href="https://www.joneshshrestha.com/">Jonesh Shrestha</a> <i class="fab fa-android"></i> developed by <a href="https://github.com/OMGSoundboard/android-app/commits/master">Marvin & contributors</a> <i class="far fa-copyright"></i> 2017. 
+							<p>Some Rights Reserved.
+						</div>
+						<!-- /copyright -->
+						
+					</div> <!-- end col lg 12 -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</footer> <!-- end footer -->
+		
+		<!-- end Footer Area
+		========================================== -->
+		
+		<!-- 
+		Essential Scripts
+		=====================================-->
+		
+		<!-- Main jQuery -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Slitslider -->
+		<script src="js/jquery.slitslider.js"></script>
+		<script src="js/jquery.ba-cond.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Portfolio Filtering -->
+		<script src="js/jquery.mixitup.min.js"></script>
+		<!-- Custom Scrollbar -->
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<!-- Jappear js -->
+		<script src="js/jquery.appear.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing-1.3.pack.js"></script>
+		<!-- tweetie.min -->
+		<script src="js/tweetie.min.js"></script>
+		<!-- Google Map API -->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Highlight menu item -->
+		<script src="js/jquery.nav.js"></script>
+		<!-- Sticky Nav -->
+		<script src="js/jquery.sticky.js"></script>
+		<!-- wow.min Script -->
+		<script src="js/wow.min.js"></script>
+		<!-- For video responsive -->
+		<script src="js/jquery.fitvids.js"></script>
+		<!-- Grid js -->
+		<script src="js/grid.js"></script>
+		<!-- font awesome pro -->
+		
+		<!-- Custom js -->
+		<script src="js/custom.js"></script>
+
+    </body>
 </html>
