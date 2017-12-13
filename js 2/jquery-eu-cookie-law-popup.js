@@ -28,7 +28,7 @@ $.fn.euCookieLawPopup = (function() {
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// PARAMETERS (MODIFY THIS PART) //////////////////////////////////////////////////////////////
 	_self.params = {
-		cookiePolicyUrl : 'http://www.wimagguc.com/?cookie-policy',
+		cookiePolicyUrl : 'https://omgsoundboard.github.io/#legal',
 		popupPosition : 'top',
 		colorStyle : 'default',
 		compactStyle : false,
