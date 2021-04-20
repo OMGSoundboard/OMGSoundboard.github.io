@@ -1,0 +1,51 @@
+<footer class="footer-area bg-color2">
+	<div class="container">
+		<div class="footer-widget-wrraper p-b-100">
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<a href="{{site.url}}" class="footer-logo">
+						<h2>{{site.footer_title}}</h2>
+					</a>
+					<div class="footer-widget">
+						<p>{{ site.footer_description }}</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="footer-widget">
+						<div class="widget-title">
+							<h5 class="heading-5">{{ site.footer_menu_title }}</h5>
+						</div>
+						<ul class="widget-list list-inline">
+							{% for item in site.footer_menu %}
+								<li><a href="{{ item.url }}">{{ item.name }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="footer-widget">
+						<div class="widget-title">
+							<h5 class="widget-title heading-5">Newsletter Sent</h5>
+						</div>
+						<form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+							<div class="form-group">
+								<input type="text" class="form-control required email" placeholder="Your Email">
+							</div>
+							<div class="form-group m-0">
+								<button name="subscribe" class="btn btn-primary btn-block" type="submit">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright-wrapper text-center">
+			<p>© {{ 'now' | date: "%Y" }} {{site.title}}.Rights belongs to the rights owners.</p>
+		</div>
+		<a href="#" class="scrollToTop"><i class="fas fa-angle-up"></i></a>
+	</div>
+	<ul class="footer-shape list-inline">
+		<li class="left"><img src="{{site.baseurl}}/assets/images/footer-shap.png" alt="footer shape" /></li>
+		<li class="right"><img src="{{site.baseurl}}/assets/images/footer-shap2.png" alt="footer shape" /></li>
+	</ul>
+</footer>

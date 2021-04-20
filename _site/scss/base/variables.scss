@@ -1,0 +1,144 @@
+// Global Variables
+
+
+// Background Colors
+
+$bg-color1:                    #ffffff !default;
+$bg-color2:                   #0B0E2E;
+$bg-color3:                   #4986ee ;
+$bg-color4:                   #fafcff ;
+$bg-overlay:                  #216ae6 !default;
+
+
+// Spacing
+
+$sectionspace: (100,130,140);
+$innerspace: (30, 40,50,60,70, 80,90);
+$sides: (top, bottom, left, right);
+$sides2: (top, bottom);
+
+$section-100:  100px;
+$section-130:  130px;
+$section-140:  140px;
+$inner-30:  30px;
+$inner-40:  40px;
+$inner-50:  50px;
+$inner-60:  60px;
+$inner-70:  70px;
+$inner-80:  80px;
+$inner-90:  90px;
+
+// Links
+
+$link-color:                              #216ae6 !default;
+
+
+// Fonts Color
+
+$font-color-base:        #777777  !default;
+$font-color2:            #041e49 ;
+$font-color3:             #216ae6 ;
+$font-color4:             #ffffff ;
+$placeholder-color:         #777777  !default;
+
+// Social Color
+
+$social-color1:            #3c5a98;
+$social-color2:            #4f7ea6;
+$social-color3:            #29a8eb;
+
+
+
+// Typography
+
+$font-family-base:            'Poppins', sans-serif !default;
+$font-size-base:              1.6 !default;
+$small-font-size:             1.4 ;
+$font-weight-light:           300;
+$font-weight-normal:          400 !default;
+$font-weight-medium:          500 ;
+$font-weight-semibold:        600 ;
+$font-weight-bold:            700 !default;
+$line-height-base:            1.8 !default;
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base ;
+$headings-color:              $font-color2;
+$headings-font-family:        $font-family-base;
+$headings-line-height:        1.4 !default;
+$big-line-height:             1.3 ;
+
+
+$big-size1:                $font-size-base * 3.75;
+$big-size2:                $font-size-base * 3.0;
+$big-size3:                $font-size-base * 2.5;
+$big-size4:                $font-size-base * 1.5;
+
+
+// Form
+
+
+$form-bg:                 #ffffff !default;
+$form-bg2:                #2e75d8 ;
+$form-bg3:                #f5f5f5;
+$form-bg4:                #000000;
+
+$form-size:               16px !default;
+$form-size2:              20px;
+$form-size3:              24px;
+
+
+$form-color:             #ffffff !default;
+$form-color2:            #2e75d8;
+$form-color3:            #777777;
+
+$form-border:            1px solid #e3e3e3 !default;
+$form-border2:           1px solid #2e75d8 ;
+$form-border3:           1px solid #ffffff ;
+$form-border4:           1px solid #f5f5f5 ;
+$form-border5:           1px solid #000000 ;
+
+$form-radius:            4px !default;
+
+$form-space-v:              10px !default;
+$form-space-h:              30px !default;
+
+// Form Change
+
+
+$form-change-bg:                 #ffffff !default;
+$form-change-bg2:                #2e75d8 ;
+$form-change-bg3:                #f5f5f5;
+$form-change-bg4:                #000000;
+
+$form-change-color:             #ffffff !default;
+$form-change-color2:            #2e75d8;
+$form-change-color3:            #777777;
+
+$form-change-border:            1px solid #e3e3e3 !default;
+$form-change-border2:           1px solid #2e75d8 ;
+$form-change-border3:           1px solid #ffffff ;
+
+// Component
+
+$border-radius:               5px !default;
+$round-radius:               50px !default;
+$box-shadow:                  0 0 20px 0 rgba(25, 100, 227, 0.06)  !default;
+$box-shadow-deep:             0 0 10px 0 rgba(25, 100, 227, 0.10)  !default;
+$box-shadow-spead:            0 0 30px 0px rgba(25, 100, 227, 0.07)  !default;
+$transition-base:             all 500ms ease !default;
+
+
+
+// Responsive Layout
+
+$desktop-device: 1200px !default;
+$laptop-device: 992px;
+$tablet-device: 768px;
+$mobile-device: 576px;
+
+
+

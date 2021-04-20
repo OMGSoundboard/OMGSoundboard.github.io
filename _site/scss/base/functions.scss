@@ -1,0 +1,115 @@
+// Global Functions
+
+// Responsive Layout
+
+@mixin desktop {
+  @media (min-width: #{$laptop-device}) and (max-width: #{$desktop-device}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$tablet-device}) and (max-width: #{$laptop-device}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-device}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-device}) {
+    @content;
+  }
+}
+
+// Font Size
+@mixin font-size($font-size-base) {
+  font-size: ($font-size-base * 10) + px;
+}
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+// Section Spacing
+@each $space in $sectionspace{
+  @each $sides2 in $sides2 {
+    .p-#{str-slice($sides2, 0, 1)}-#{$space} {
+      padding-#{$sides2}: #{$space}px;
+    }
+  
+  }
+}
+@include tablet{
+@each $space in $sectionspace{
+  @each $sides2 in $sides2 {
+    .p-#{str-slice($sides2, 0, 1)}-#{$space} {
+      padding-#{$sides2}: #{$space - 40}px;
+    }
+  
+  }
+}
+}
+// Inner Spacing
+
+@each $space in $innerspace{
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px;
+    }
+  
+  }
+}
+
+@include tablet{
+@each $space in $innerspace{
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space - 20}px;
+    }
+  
+  }
+}
+}
+//  Color Opacity
+
+@mixin background-opacity($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+@mixin color-opacity($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  color: $solid-color;
+  color: $color;
+}
+
+
+
+// Form Handle
+@mixin form-size($font-size,$space-vertical, $space-horizontal,$border-radius) { 
+  font-size:$font-size;
+  padding: $space-vertical $space-horizontal;
+  border-radius:$border-radius;
+}
+@mixin form-variant($color, $background, $border,$change-color,$change-background,$change-border) {
+  color: $color;
+  background-color: $background;
+  border: $border;
+  &:focus,
+  &:hover,
+  &:active{
+    color: $change-color;
+    background-color: $change-background;
+    border: $change-border;
+  }
+}

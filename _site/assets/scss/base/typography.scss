@@ -1,0 +1,178 @@
+// Global Typography
+body {
+  font-family: $font-family-base; 
+  @include font-size($font-size-base);
+  line-height: $line-height-base;
+  font-weight: $font-weight-normal;
+  color:$font-color-base; 
+}
+// Placeholder
+@include placeholder {
+     font-size:$font-size-base;
+	 line-height:$line-height-base;
+    color: $placeholder-color;
+    font-weight:$font-weight-normal;
+}
+// Heading Font
+
+h1, .heading-1 { 
+	@include font-size($h1-font-size); 
+	@include tablet{
+	    @include font-size($h1-font-size - 1.5); 
+	}
+}
+h2, .heading-2 { 
+    @include font-size($h2-font-size); 
+	@include tablet{
+	    @include font-size($h2-font-size - 1.5); 
+	}
+}
+h3, .heading-3 { 
+	@include font-size($h3-font-size); 
+}
+h4, .heading-4 {
+	@include font-size($h4-font-size); 
+}
+h5, .heading-5 { 
+	@include font-size($h5-font-size); 
+}
+h6, .heading-6 { 
+	@include font-size($h6-font-size); 
+}
+h1, h2, h3, h4, h5, h6 ,
+.heading-1, .heading-2, 
+.heading-3, .heading-4, 
+.heading-5, .heading-6{
+  line-height:$headings-line-height;
+  color:$headings-color;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-weight: $font-weight-normal;
+}
+
+.heading-1, .heading-2, 
+.heading-3, .heading-4, 
+.heading-5, .heading-6 {
+  font-family: $headings-font-family;
+  font-weight: $font-weight-semibold;
+}
+h1,h2,h3,h4,h5,h6{
+   a{
+      color:$font-color2;
+   }
+}
+// Big Font
+
+.big-font1,.big-font2,.big-font3{ 
+    line-height:$big-line-height;
+	font-weight:$font-weight-bold;
+}
+.big-font1 { 
+	@include font-size($big-size1);
+	@include desktop{
+	    @include font-size($big-size1 - 1.5); 
+	}	
+	@include laptop{
+	    @include font-size($big-size1 - 2); 
+	}
+	@include tablet{
+	    @include font-size($big-size1 - 2.5); 
+	}
+}
+.big-font2 { 
+	@include font-size($big-size2); 
+	@include desktop{
+	    @include font-size($big-size2 - 1.5); 
+	}	
+	@include laptop{
+	    @include font-size($big-size2 - 2); 
+	}
+	@include tablet{
+	    @include font-size($big-size2 - 2); 
+	}
+}
+.big-font3 { 
+	@include font-size($big-size3);
+	@include desktop{
+		@include font-size($big-size3 - 1.5); 
+	}
+	@include laptop{
+		@include font-size($big-size3 - 1.5); 
+	}		
+	@include tablet{
+		@include font-size($big-size3 - 1.5); 
+	}	
+}
+.big-font4 { 
+	@include font-size($big-size4); 
+	@include desktop{
+	    @include font-size($big-size4 - 1.5); 
+	}
+	@include laptop{
+	    @include font-size($big-size4 - 2); 
+	}
+	@include tablet{
+	    @include font-size($big-size4 - 2); 
+	}
+}
+
+// Small Font
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: $font-weight-normal;
+}
+
+// Font Weight
+
+.font-weight-bold{
+   font-weight:$font-weight-bold !important;
+}
+.weight-semibold{
+   font-weight:$font-weight-semibold !important;
+}
+.weight-medium{
+   font-weight:$font-weight-medium !important;
+}
+.weight-normal{
+   font-weight:$font-weight-normal !important;
+}
+.weight-light{
+   font-weight:$font-weight-light !important;
+}
+
+
+// Invert Color
+
+
+.white-all{
+   h1,h2,h3,h4,h5,h6,p,a,span,label,input,textarea,em,b,*{
+     color:$font-color4 !important;
+   }
+}
+.white-text{
+     color:$font-color4 !important;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

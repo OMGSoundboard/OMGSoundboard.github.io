@@ -1,0 +1,27 @@
+<section class="service-area bg-color1 p-t-130 p-b-100">
+<div class="themeix-ani">
+    <img src="{{site.baseurl}}/assets/images/themeix-ani1.png" alt="animated shape" class="shape-one" />
+    <img src="{{site.baseurl}}/assets/images/themeix-ani2.png" alt="animated shape" class="shape-two" />
+    <img src="{{site.baseurl}}/assets/images/themeix-ani3.png" alt="animated shape" class="shape-tree" />
+</div>
+<div class="container">
+    <div class="service-wrapper">
+        <div class="row">
+          {% for service in site.data.services %}
+            <div class="col-md-4">
+            <div class="service-box" data-aos="fade-up">
+                <div class="service-logo"><img src="{{service.image}}" alt="{{service.title}}" /></div>
+                <div class="service-content">
+                    <h4 class="heading-4">{{service.title}}</h4>
+                    <p>{{service.description}}</p>
+                    {% assign odd = forloop.index | modulo: 2 %}
+                    {% assign even = forloop.index | modulo: 3 %}
+                    <div class="service-line {% if forloop.first %} line-color1 {% endif %} {% if odd == 0 %} line-color2 {% endif %} {% if even == 0 %} line-color3 {% endif %}"></div>
+                </div>
+            </div>
+            </div>
+           {% endfor %}
+        </div>
+    </div>
+</div>
+</section>

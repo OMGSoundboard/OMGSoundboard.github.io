@@ -1,0 +1,20 @@
+{
+  "name": "themeix",
+  "description": "Quick start gulp package for all web developers",
+  "authors": [
+    "Themeix, themeix lab"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery.fitvids": "fitvids#^1.1.0",	
+    "bootstrap": "^4.3.1",
+    "popper.js": "^1.15.0",
+    "fontawesome": "^4.7.0",
+    "prismjs": "prism#^1.16.0",
+    "owl.carousel": "owl.carousel#^2.3.4",
+    "aos": "aos#^2.3.4",
+    "infinite-scroll": "^3.0.6",
+    "scrollup": "^2.4.1",
+    "masonry-layout": "masonry#^4.2.2"
+  }
+}

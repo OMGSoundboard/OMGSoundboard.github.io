@@ -1,0 +1,144 @@
+####################################################
+#
+# Welcome to Applin Jekyll Template
+# v 2.0.1
+####################################################
+
+# Site settings
+
+title: "OMGSoundboard"
+email: "marvin@omgsoundboard.audio"
+description: >- # this means to ignore newlines until "baseurl:"
+  OMGSoundboard | Badass Android Soundboard
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://applin.netlify.com/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+logo: "/assets/images/header-logo.png"
+mailchimp-list: //redgadgets.us10.list-manage.com/subscribe/post?u=210acce5db69d3d4a04b0e25d&amp;id=08c6708f40"
+
+cover_image: ""
+
+permalink: "/:title"
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  # - jekyll-paginate-v2
+  # - jekyll-archives
+
+# # Site configuration for the Jekyll 2 Pagination Gem
+# pagination:
+#   # Site-wide kill switch, disabled here it doesn't run at all
+#   enabled: true
+#   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
+#   debug: true
+#   # The default document collection to paginate if nothing is specified ('posts' is default)
+#   collection: 'posts'
+#   # How many objects per paginated page, used to be `paginate` (default: 0, means all)
+#   per_page: 6
+#   # The permalink structure for the paginated pages (this can be any level deep)
+#   #permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+#   permalink: '/pages/:num/' # Pages are simple html files
+#   #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
+#   # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
+#   title: ':title - page :num'
+#   # Limit how many pagenated pages to create (default: 0, means all)
+#   limit: 0
+#   # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
+#   sort_field: 'date'
+#   # Optional, sorts the posts in reverse order (omit to default decending or sort_reverse: true)
+#   sort_reverse: true
+#   # Optional, the default category to use, omit or just leave this as 'posts' to get a backwards-compatible behavior (all posts)
+#   category: 'posts'
+#   # Optional, the default tag to use, omit to disable
+#   tag: ''
+#   # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts,
+#   # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
+#   locale: ''
+#  # Optional,omit or set both before and after to zero to disable.
+#  # Controls how the pagination trail for the paginated pages look like.
+#   trail:
+#     before: 2
+#     after:
+#   # Optional, the default file extension for generated pages (e.g html, json, xml).
+#   # Internally this is set to html by default
+#   extension: 'html'
+#   # Optional, the default name of the index file for generated pages (e.g. 'index.html')
+#   # Without file extension
+#   indexpage: 'index'
+
+
+############################################################
+# Site configuration for the Auto-Pages feature
+# The values here represent the defaults if nothing is set
+autopages:
+
+  # Site-wide kill switch, disable here and it doesn't run at all
+  enabled: true
+
+  # Category pages, omit entire config element to disable
+  categories:
+    # Optional, the list of layouts that should be processed for every category found in the site
+    layouts:
+      - 'category.html'
+    # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
+    title: 'Category -  :cat'
+    # Optional, the permalink for the  pagination page (:cat is replaced),
+    # the pagination permalink path is then appended to this permalink structure
+    permalink: '/category/:cat'
+
+  # Collection pages, omit to disable
+  collections:
+    layouts:
+      - 'category.html'
+    title: ' :coll' # :coll is replaced by the collection name
+    permalink: '/:coll/'
+
+  # Tag pages, omit to disable
+  tags:
+    layouts:
+      - 'category.html'
+    title: 'Tag - :tag' # :tag is replaced by the tag name
+    permalink: '/tag/:tag'
+
+
+
+tag_page_layout: category
+tag_page_dir: tag
+tag_permalink_style: pretty
+
+jekyll-archives:
+  enabled: all
+  layout: category
+  permalinks:
+    category: '/category/:name/'
+
+collections:
+  authors:
+    title: Authors
+    output: true
+    permalink: /authors/:path/
+
+feed:
+  collections:
+    posts:
+      path: "/index.xml"
+
+
+# Footer
+
+footer_title: "OMGSoundboard"
+footer_description: "Having the right meme or sound at the right time can make a joke work! Sounds are so much fun and useful so this is why you need to download OMGSoundboard."
+
+footer_menu_title: About
+footer_menu:
+  - name: "Github"
+    url: "#"
+  - name: "Helpdesk"
+    url: "#"
+  - name: "Request a tune"
+    url: "#"
+  - name: "DMCA"
+    url: "#"

@@ -1,0 +1,137 @@
+<header class="header-area bg-color2 {% if page.layout == "page" or page.layout == "tag_page" or page.layout == "category" or page.layout == "post" or  page.layout == "author" %}page-area{% endif %}">
+<div class="container">
+    <div class="header-nav">
+        <div class="row">
+            <div class="col-lg-2">
+             {% include header_logo.html %}
+            </div>
+            <div class="col-lg-10">
+              {% include navigation.html %}
+            </div>
+        </div>
+    </div>
+     {% if page.url == "/" %}
+    <div class="header-banner">
+        <div class="row">
+            <div class="col-md-8">
+            <div class="banner-content">
+                <h1 class="big-font1 white-text m-b-50">Awesome soundboard for your awesome sounds</h1>
+                <h5 class="white-text m-b-50">OMGSoundboard allows you to create your own unique soundboard. What's exciting about this app is that it allows you to be only limited by your imagination.
+                </h5>
+                <ul class="banner-ads-btn m-0 list-inline">
+                    <li class="list-inline-item"><a href="#" class="ads-btn1 btn btn-primary"><img src="{{site.baseurl}}/assets/images/google-play.png" alt="ads image" /><span>Google Play</span></a></li>
+                    <li class="list-inline-item"><a href="#" class="ads-btn2 btn btn-primary"><img src="{{site.baseurl}}/assets/images/appstore.png" alt="ads image" /><span>Appstore</span></a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="banner-mockup"><img src="{{site.baseurl}}/assets/images/banner-mockup.png" alt="banner image" /></div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.layout == "post" %}
+    <div class="header-page-title">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="page-title text-left white-all">
+                <h1 class="big-font1 m-b-30">{{page.title}}</h1>
+
+                <ul class="page-post-date list-inline">
+                    {% assign author =  page.author %}
+		{% if author %}
+					<li class="list-inline-item"><img src="{{site.baseurl}}/assets/images/page-avatar-icon.png" alt="icon"/><a href="/authors/{{page.author}}">{{page.author}}</a></li>
+			{% endif %}
+                    <li class="list-inline-item"><img src="{{site.baseurl}}/assets/images/page-clock-icon.png" alt="icon"/>{{page.date | date_to_long_string}}</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.layout == "category" %}
+               <div class="header-page-title">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="page-title text-center white-all">
+                              <div class="author-name">
+							  <h1 class="big-font1"> {{page.title | capitalize }}</h1>
+								 <p class="page-title-meta mb-0">A collection of <strong>
+										{% for post in (1..paginator.total_pages) %}
+									   {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+									{% endfor %}
+									{{ post_count }}
+						</strong>  posts
+								</p>
+
+							  </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+			{% endif %}
+			{% if page.layout == "tag_page" %}
+               <div class="header-page-title">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="page-title text-center white-all">
+                              <div class="author-name">
+							  <h1 class="big-font1"> {{page.title | capitalize }}</h1>
+								 <p class="page-title-meta mb-0">A collection of <strong>
+												   {% for post in page.posts %}
+									   {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+									{% endfor %}
+									{{ post_count }}
+						</strong>  posts
+								</p>
+
+							  </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+    {% endif %}
+    {% if page.layout == "author" %}
+    <div class="header-page-title">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="page-title text-center white-all">
+                    <div class="author-name">
+                        <img src="{{page.image}}" alt="{{page.name}}"/>
+                        <h1 class="big-font1">{{page.name}}</h1>
+                        <p>{{page.bio}}</p>
+                        <ul class="social-link list-inline">
+                            {% if page.facebook %}
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            {% endif %}
+                            {% if page.twitter %}
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if page.reddit %}
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-reddit-alien"></i></a></li>
+                            {% endif %}
+                            {% if page.instagram %}
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% if page.layout == "page" %}
+    <div class="header-page-title">
+      <div class="row">
+        <div class="col-md-12">
+            <div class="page-title text-center white-all">
+                <h1 class="big-font1">{{page.title}}</h1>
+            </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% include header_shape.html %}
+</div>
+</header>
