@@ -1,0 +1,42 @@
+<!-- Header -->
+<nav class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			{% include header_logo.html %}
+		</div>
+		{% include navigation.html %}
+	</div>
+</nav>
+
+<section class="main-banner-wrp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                        <img class="img1" src="{{site.baseurl}}/assets/images/cercla.png">
+                    <div class="banner-dt">
+                        <h1>Awesome soundboard for your awesome sounds</h1>
+                        <p>OMGSoundboard allows you to create your own unique soundboard. What's exciting about this app is that it allows you to be only limited by your imagination. </p>
+                         <ul class="banner-ads-btn m-0 list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="ads-btn1 btn btn-primary"><img src="{{site.baseurl}}/assets/images/google-play.png" alt="ads image" /><span>Google Play</span></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="ads-btn2 btn btn-primary"><img src="{{site.baseurl}}/assets/images/appstore.png" alt="ads image" /><span>Appstore</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="banner-img">
+                        <img src="{{site.baseurl}}/assets/images/hero1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,32 @@
+<section class="feature-wrp" id="feature">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="feature-dt">
+					<div class="titlebar">
+						<h2>Wonderful tunes</h2>
+						<p>OMGSoundboards offers the most awesome tunes. In case you would like one or more fantastic tunes added you can open a Pull Request, open a ticket or drop a line.</p>
+					</div>
+					<div class="feature-block">
+						<div class="row">
+							{% for feature in site.data.features %}
+							<div class="col-md-6">
+								<div class="feature-innerbox">
+									<img src="{{feature.image}}" alt="{{feature.title}}">
+									<h3>{{feature.title}}</h3>
+									<p>{{feature.description}}</p>
+								</div>
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="feature-img">
+					<img src="{{site.baseurl}}/assets/images/feature-img.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

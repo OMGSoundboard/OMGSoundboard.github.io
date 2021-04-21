@@ -1,0 +1,19 @@
+{% if page.url == "/" %}
+<!-- Navigation For Home Page -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav pull-right" id="menu">
+		<li><a href="{{site.url}}">Home</a></li>
+		<li><a href="#feature" class="js-scroll-trigger">Feature</a></li>
+		<li><a href="/pages/contact" class="main-btn">Contact</a></li>
+	</ul>
+</div>
+{% else %}
+<!-- Navigation For Inner Pages -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav pull-right" id="menu">
+		<li><a href="{{site.url}}">Home</a></li>
+		<li><a href="#feature">Feature</a></li>
+		<li><a href="/pages/contact" class="main-btn">Contact</a></li>
+	</ul>
+</div>
+{% endif %}

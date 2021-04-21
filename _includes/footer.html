@@ -1,0 +1,47 @@
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="fotlogo">
+					<img src="{{site.footer_title}}" alt="{{ site.title }}">
+					<p>{{ site.footer_description }}</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="quicklink">
+					<h3>{{ site.footer_menu_title }}</h3>
+					<ul>
+						{% for item in site.footer_menu %}
+						<li><a href="{{ item.url }}">{{ item.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="quicklink">
+					<h3>Newsletter Sent</h3>
+					<div class="form-group">
+					</div>
+					<input type="text" name="" class="form-control" placeholder="Your Email">
+				</div>
+				<a href="#" class="mainbtn">Subscribe</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<p>© {{ 'now' | date: "%Y" }} {{site.title}}.Rights belongs to the rights owners.</p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms and Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
