@@ -1,19 +1,19 @@
 {% if page.url == "/" %}
 <!-- Navigation For Home Page -->
-<nav class="themeix-navbar">
-	<ul class="slimmenu main-menu">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav pull-right" id="menu">
 		<li><a href="{{site.url}}">Home</a></li>
 		<li><a href="#feature" class="js-scroll-trigger">Feature</a></li>
-		<li><a href="/pages/contact" class="js-scroll-trigger">Contact</a></li>
+		<li><a href="/pages/contact" class="main-btn">Contact</a></li>
 	</ul>
-</nav>
+</div>
 {% else %}
 <!-- Navigation For Inner Pages -->
-<nav class="themeix-navbar">
-	<ul class="slimmenu main-menu">
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav pull-right" id="menu">
 		<li><a href="{{site.url}}">Home</a></li>
-		<li><a href="#feature" class="js-scroll-trigger">Feature</a></li>
-		<li><a href="/pages/contact" class="js-scroll-trigger">Contact</a></li>
+		<li><a href="#feature">Feature</a></li>
+		<li><a href="/pages/contact" class="main-btn">Contact</a></li>
 	</ul>
-</nav>
+</div>
 {% endif %}
