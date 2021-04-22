@@ -1,1 +1,2 @@
-
+- [Terms and Conditions](https://omgsoundboard.audio/tos)
+- [Privacy Policy](https://omgsoundboard.audio/privacy)
