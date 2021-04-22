@@ -11,10 +11,10 @@ email: "marvin@omgsoundboard.audio"
 description: >- # this means to ignore newlines until "baseurl:"
   OMGSoundboard | Badass Android Soundboard
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://applin.netlify.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://omgsoundboard.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-logo: "/assets/images/header-logo.png"
+logo: "/assets/images/logo.png"
 mailchimp-list: //redgadgets.us10.list-manage.com/subscribe/post?u=210acce5db69d3d4a04b0e25d&amp;id=08c6708f40"
 
 cover_image: ""
@@ -135,10 +135,10 @@ footer_description: "Having the right meme or sound at the right time can make a
 footer_menu_title: About
 footer_menu:
   - name: "Github"
-    url: "#"
+    url: "https://github.com/OMGSoundboard/android-app"
   - name: "Helpdesk"
-    url: "#"
+    url: "https://help.omgsoundboard.audio/"
   - name: "Request a tune"
-    url: "#"
+    url: "mailto:marvin@omgsoundboard.audio?subject=Tune%20Request"
   - name: "DMCA"
-    url: "#"
+    url: "mailto:marvin@omgsoundboard.audio?subject=DMCA"
