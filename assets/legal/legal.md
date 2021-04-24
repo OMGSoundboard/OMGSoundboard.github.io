@@ -1,0 +1,4 @@
+- [Terms and Conditions](https://omgsoundboard.audio/tos)
+- [Privacy Policy](https://omgsoundboard.audio/privacy)
+- [Contact](https://omgsoundboard.audio/contact)
+- 404 for everything else
