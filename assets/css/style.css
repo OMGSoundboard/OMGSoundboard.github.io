@@ -101,15 +101,16 @@ body{
 .navbar-toggle .icon-bar:nth-child(3){opacity: 0}
 .navbar-toggle .icon-bar:nth-child(4){transform:rotate(45deg)translateY(-4px)translateX(-3px);}
 .navbar-default .navbar-toggle{
-    border-color: #000;
+    border-color: #fff;
     transition: all 0.3s ease;
+    border-radius: 0;
 }
 .navbar-default .navbar-toggle .icon-bar{
-    background: #000;
+    background: #fff;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-    background: #ca031a;
-    border-color: #d4670c;
+    background: #04ACFB;
+    border-color: #fff;
 }
 .navbar-default .navbar-toggle:hover .icon-bar,.navbar-default .navbar-toggle:focus .icon-bar{
     background: #fff;
@@ -358,20 +359,11 @@ body{
 .video-dt .playimg{
     position: relative;
 }
-.video-dt .playimg a{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.video-dt .playimg iframe{
+    height: 401px;
+    width: 700px;
 }
-.video-dt .playimg a img{
-    max-width: 150px;
-}
-.video-dt .playimg img{
-    max-width: 60%;
-    margin:0 auto;
-    display: table;
-}
+
 
 
 
