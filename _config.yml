@@ -134,7 +134,7 @@ footer_description: "Having the right meme or sound at the right time can make a
 
 footer_menu_title: About
 footer_menu:
-  - name: "Github"
+  - name: "GitHub"
     url: "https://github.com/OMGSoundboard/android-app"
   - name: "Helpdesk"
     url: "https://help.omgsoundboard.audio/"
