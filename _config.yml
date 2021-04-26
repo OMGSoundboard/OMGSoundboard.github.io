@@ -11,7 +11,7 @@ email: "marvin@omgsoundboard.audio"
 description: >- # this means to ignore newlines until "baseurl:"
   OMGSoundboard | Badass Android Soundboard
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://omgsoundboard.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://omgsoundboard.audio/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 logo: "/assets/images/logo.png"
@@ -120,6 +120,15 @@ collections:
     title: Authors
     output: true
     permalink: /authors/:path/
+  redirects:
+    output: true
+
+defaults:
+  -
+    scope:
+      type: redirects
+    values:
+      layout: redirect
 
 feed:
   collections:
@@ -134,7 +143,7 @@ footer_description: "Having the right meme or sound at the right time can make a
 
 footer_menu_title: About
 footer_menu:
-  - name: "Github"
+  - name: "GitHub"
     url: "https://github.com/OMGSoundboard/android-app"
   - name: "Helpdesk"
     url: "https://help.omgsoundboard.audio/"
