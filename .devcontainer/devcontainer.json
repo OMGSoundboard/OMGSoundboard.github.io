@@ -1,4 +1,5 @@
 {
+	"name": "OMGSoundboard Website",
 	"build": {
 		"dockerfile": "./Dockerfile",
 		"context": "."
