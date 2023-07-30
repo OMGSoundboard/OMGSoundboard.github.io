@@ -49,7 +49,7 @@ body{
     text-decoration: none;
 }
 
-/* Navigation Section */ 
+/* Navigation Section */
 .navbar-default{
     background:transparent;
     position: absolute;
@@ -86,10 +86,10 @@ body{
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:hover{
-    color: #000;
+    color: #fff;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-    color: #000;
+    color: #fff;
 }
 
 /* Toggle */
