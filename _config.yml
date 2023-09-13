@@ -152,3 +152,5 @@ footer_menu:
     url: "mailto:marvin@omgsoundboard.audio?subject=Tune%20Request"
   - name: "DMCA"
     url: "mailto:marvin@omgsoundboard.audio?subject=DMCA"
+  - name: "Mastodon"
+    url: "https://androiddev.social/@OMGSoundboard"
