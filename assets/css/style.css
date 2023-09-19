@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,600,700');
+/* Import the font using @font-face */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/OpenSans-Bold.ttf'), url('../fonts/OpenSans-Light.ttf') , url('../fonts/OpenSans-Regular.ttf') , url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
 *{
     margin:0;
     padding:0;
@@ -42,7 +49,7 @@ img{
     display: block;
 }
 body{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #000;
