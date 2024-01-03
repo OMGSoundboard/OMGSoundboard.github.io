@@ -1,0 +1,5 @@
+Contact: mailto:marvin@omgsoundboard.audio
+Expires: 2024-12-31T11:12:00.000Z
+Preferred-Languages: en
+Canonical: https://omgsoundboard.audio/.well-known/security.txt
+Policy: https://github.com/OMGSoundboard/android-app/blob/trunk/.github/SECURITY.md

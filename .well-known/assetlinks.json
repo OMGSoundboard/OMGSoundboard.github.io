@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "audio.omgsoundboard",
+      "sha256_cert_fingerprints": [
+        "43:E8:4D:E3:10:66:9B:A2:68:16:5E:15:1A:3B:4D:67:AC:D7:DD:95:FB:6D:93:9D:5D:8D:4E:11:22:43:9F:A9"
+      ]
+    }
+  }
+]
