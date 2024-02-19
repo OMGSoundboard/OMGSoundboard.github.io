@@ -30,6 +30,10 @@ Please make sure to update tests as appropriate.
 
 Check out the [contribution guidelines](https://github.com/OMGSoundboard/android-app/blob/trunk/.github/CONTRIBUTING.md) for details please.
 
+# Acknowledgments
+
+I am deeply grateful for the support from many contributors and the sponsorships from [GitHub](https://github.com/github/), [Codacy](https://github.com/codacy/), [Codecov](https://github.com/codecov/), [Dependabot](https://github.com/dependabot/), [PingPing](https://pingping.io/), [updown.io](https://updown.io/r/yDSGu) and [Instatus](https://instatus.com/).
+
 # License
 
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
