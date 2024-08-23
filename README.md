@@ -11,6 +11,7 @@
 [![OMGSoundboard.audio PingPing](https://img.shields.io/badge/Ping-blue?logo=pingping)](https://ping.omgsoundboard.audio/)
 [![OMGSoundboard.audio updwown.io](https://img.shields.io/badge/Uptime-gray?logo=updown)](https://up.omgsoundboard.audio/)
 [![OMGSoundboard.audio Status](https://img.shields.io/badge/Status-black?logo=instatus)](https://status.omgsoundboard.audio/)
+[![OMGSoundboard.audio Monitoring](https://img.shields.io/badge/Monitoring-blue?logo=uriports)](https://omgsoundboard.audio/)
 [![Website](https://badgen.net/badge/icon/website?icon=firefox&label)](https://omgsoundboard.audio/)
 
 # [OMGSoundboard Website](https://omgsoundboard.audio/)
