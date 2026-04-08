@@ -147,7 +147,7 @@ footer_menu:
   - name: "GitHub"
     url: "https://github.com/OMGSoundboard/android-app"
   - name: "Helpdesk"
-    url: "https://help.omgsoundboard.audio/"
+    url: "mailto:marvin@omgsoundboard.audio?subject=Helpdesk"
   - name: "Request a tune"
     url: "mailto:marvin@omgsoundboard.audio?subject=Tune%20Request"
   - name: "DMCA"
